@@ -19,6 +19,9 @@ class ApiController extends Controller
             case 'courses':
                 $models = Course::model()->findAll();
                 break;
+            case 'sections':
+                $models = Section::model()->findAll();
+                break;
             default:
                 // Model not implemented error
                 $this->_sendResponse(501, sprintf(
@@ -52,6 +55,9 @@ class ApiController extends Controller
             case 'courses':
                 $model = Course::model()->findByPk($_GET['id']);
                 break;
+            case 'sections':
+                $model = Section::model()->findByPk($_GET['id']);
+                break;
             default:
                 $this->_sendResponse(501, sprintf(
                     'Mode <b>view</b> is not implemented for model <b>%s</b>',
@@ -70,7 +76,10 @@ class ApiController extends Controller
         switch ($_GET['model']) {
             // Get an instance of the respective model
             case 'courses':
-                $model = new Course;
+                $model = new Course();
+                break;
+            case 'sections':
+                $model = new Section();
                 break;
             default:
                 $this->_sendResponse(501,
@@ -117,6 +126,9 @@ class ApiController extends Controller
             // Find respective model
             case 'courses':
                 $model = Course::model()->findByPk($_GET['id']);
+                break;
+            case 'sections':
+                $model = Section::model()->findByPk($_GET['id']);
                 break;
             default:
                 $this->_sendResponse(501,
@@ -165,6 +177,9 @@ class ApiController extends Controller
             // Load the respective model
             case 'courses':
                 $model = Course::model()->findByPk($_GET['id']);
+                break;
+            case 'sections':
+                $model = Section::model()->findByPk($_GET['id']);
                 break;
             default:
                 $this->_sendResponse(501,
@@ -229,19 +244,19 @@ class ApiController extends Controller
 
             // this should be templated in a real-world solution
             $body = '
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <title>' . $status . ' ' . $this->_getStatusCodeMessage($status) . '</title>
-</head>
-<body>
-    <h1>' . $this->_getStatusCodeMessage($status) . '</h1>
-    <p>' . $message . '</p>
-    <hr />
-    <address>' . $signature . '</address>
-</body>
-</html>';
+            <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+            <html>
+            <head>
+                <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+                <title>' . $status . ' ' . $this->_getStatusCodeMessage($status) . '</title>
+            </head>
+            <body>
+                <h1>' . $this->_getStatusCodeMessage($status) . '</h1>
+                <p>' . $message . '</p>
+                <hr />
+                <address>' . $signature . '</address>
+            </body>
+            </html>';
 
             echo $body;
         }

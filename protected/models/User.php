@@ -1,29 +1,32 @@
 <?php
 
 /**
- * This is the model class for table "course".
+ * This is the model class for table "user".
  *
- * The followings are the available columns in table 'course':
- * @property string $courseID
- * @property string $courseCode
- * @property string $courseName
- * @property string $courseDescription
- * @property integer $credits
+ * The followings are the available columns in table 'user':
+ * @property string $userID
+ * @property string $roleID
+ * @property string $deptID
+ * @property string $netName
+ * @property string $password
+ * @property string $firstName
+ * @property string $lastName
+ * @property string $emailAddress
  * @property string $created
  * @property string $modified
  *
  * The followings are the available model relations:
- * @property Prerequisite[] $prerequisites
+ * @property Enrollment[] $enrollments
  * @property Section[] $sections
  */
-class Course extends CActiveRecord
+class User extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'course';
+		return 'user';
 	}
 
 	/**
@@ -34,12 +37,14 @@ class Course extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('courseCode, courseName, courseDescription, credits, created, modified', 'required'),
-			array('credits', 'numerical', 'integerOnly'=>true),
-			array('courseCode, courseName', 'length', 'max'=>45),
+			array('userID, roleID, deptID, netName, password, firstName, lastName, emailAddress, created, modified', 'required'),
+			array('userID', 'length', 'max'=>20),
+			array('roleID', 'length', 'max'=>9),
+			array('deptID', 'length', 'max'=>5),
+			array('netName, password, firstName, lastName, emailAddress', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('courseID, courseCode, courseName, courseDescription, credits, created, modified', 'safe', 'on'=>'search'),
+			array('userID, roleID, deptID, netName, password, firstName, lastName, emailAddress, created, modified', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -51,8 +56,8 @@ class Course extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'prerequisites' => array(self::HAS_MANY, 'Prerequisite', 'courseCode'),
-			'sections' => array(self::HAS_MANY, 'Section', 'associatedCourseID'),
+			'enrollments' => array(self::HAS_MANY, 'Enrollment', 'associatedStudentID'),
+			'sections' => array(self::HAS_MANY, 'Section', 'assignedProfessorID'),
 		);
 	}
 
@@ -62,11 +67,14 @@ class Course extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'courseID' => 'Course',
-			'courseCode' => 'Course Code',
-			'courseName' => 'Course Name',
-			'courseDescription' => 'Course Description',
-			'credits' => 'Credits',
+			'userID' => 'User',
+			'roleID' => 'Role',
+			'deptID' => 'Dept',
+			'netName' => 'Net Name',
+			'password' => 'Password',
+			'firstName' => 'First Name',
+			'lastName' => 'Last Name',
+			'emailAddress' => 'Email Address',
 			'created' => 'Created',
 			'modified' => 'Modified',
 		);
@@ -90,11 +98,14 @@ class Course extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('courseID',$this->courseID,true);
-		$criteria->compare('courseCode',$this->courseCode,true);
-		$criteria->compare('courseName',$this->courseName,true);
-		$criteria->compare('courseDescription',$this->courseDescription,true);
-		$criteria->compare('credits',$this->credits);
+		$criteria->compare('userID',$this->userID,true);
+		$criteria->compare('roleID',$this->roleID,true);
+		$criteria->compare('deptID',$this->deptID,true);
+		$criteria->compare('netName',$this->netName,true);
+		$criteria->compare('password',$this->password,true);
+		$criteria->compare('firstName',$this->firstName,true);
+		$criteria->compare('lastName',$this->lastName,true);
+		$criteria->compare('emailAddress',$this->emailAddress,true);
 		$criteria->compare('created',$this->created,true);
 		$criteria->compare('modified',$this->modified,true);
 
@@ -107,7 +118,7 @@ class Course extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Course the static model class
+	 * @return User the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
