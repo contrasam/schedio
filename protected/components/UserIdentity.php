@@ -40,7 +40,8 @@ class UserIdentity extends CUserIdentity
         {
             $this->_id = $user->userID;
             $this->_username = $user->emailAddress;
-            $user->modified=new CDbExpression("NOW()");
+            $this->setState('roles', $user->roleID);
+            $user->lastLogin=new CDbExpression("NOW()");
             $user->save();
             $this->errorCode= self::ERROR_NONE;
         }
