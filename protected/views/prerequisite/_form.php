@@ -20,27 +20,27 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'associatedCourse'); ?>
+		<?php echo $form->labelEx($model,'associatedCourseID'); ?>
         <?php $courses = Course::model()->findAll();
         $list = CHtml::listData($courses,
             'courseID', 'courseCode');
-        echo $form->dropDownList($model, 'associatedCourse',
+        echo $form->dropDownList($model, 'associatedCourseID',
             $list,
             array('empty' => 'Select a course'));
         ?>
-		<?php echo $form->error($model,'associatedCourse'); ?>
+		<?php echo $form->error($model,'associatedCourseID'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'prerequisite'); ?>
+		<?php echo $form->labelEx($model,'prerequisiteCourseID'); ?>
         <?php $courses = Course::model()->findAll();
         $list = CHtml::listData($courses,
             'courseID', 'courseCode');
-        echo $form->dropDownList($model, 'prerequisite',
+        echo $form->dropDownList($model, 'prerequisiteCourseID',
             $list,
             array('empty' => 'Select a course'));
         ?>
-		<?php echo $form->error($model,'prerequisite'); ?>
+		<?php echo $form->error($model,'prerequisiteCourseID'); ?>
 	</div>
 
 	<div class="row buttons">

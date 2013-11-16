@@ -5,7 +5,7 @@
  *
  * The followings are the available columns in table 'subsection':
  * @property integer $SubsectionID
- * @property integer $associatedSection
+ * @property integer $associatedSectionID
  * @property string $sectionCode
  * @property string $classType
  * @property integer $roomNumber
@@ -16,8 +16,9 @@
  * @property string $modified
  *
  * The followings are the available model relations:
+ * @property Enrollment[] $enrollments
  * @property Sectiontime[] $sectiontimes
- * @property Section $associatedSection0
+ * @property Section $associatedSection
  */
 class Subsection extends CActiveRecord
 {
@@ -37,12 +38,12 @@ class Subsection extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('associatedSection, sectionCode, classType, roomNumber, buildingCode, sectionSize', 'required'),
-			array('associatedSection, roomNumber, sectionSize, currentSectionSize', 'numerical', 'integerOnly'=>true),
+			array('associatedSectionID, sectionCode, classType, roomNumber, buildingCode, sectionSize', 'required'),
+			array('associatedSectionID, roomNumber, sectionSize, currentSectionSize', 'numerical', 'integerOnly'=>true),
 			array('sectionCode, classType, buildingCode', 'length', 'max'=>5),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('SubsectionID, associatedSection, sectionCode, classType, roomNumber, buildingCode, sectionSize, currentSectionSize', 'safe', 'on'=>'search'),
+			array('SubsectionID, associatedSectionID, sectionCode, classType, roomNumber, buildingCode, sectionSize, currentSectionSize', 'safe', 'on'=>'search'),
             array('modified','default',
                 'value'=>new CDbExpression('NOW()'),
                 'setOnEmpty'=>false,'on'=>'update'),
@@ -60,8 +61,9 @@ class Subsection extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'enrollments' => array(self::HAS_MANY, 'Enrollment', 'associateSubSectionID'),
 			'sectiontimes' => array(self::HAS_MANY, 'Sectiontime', 'associatedSubSection'),
-			'associatedSection0' => array(self::BELONGS_TO, 'Section', 'associatedSection'),
+			'associatedSection' => array(self::BELONGS_TO, 'Section', 'associatedSectionID'),
 		);
 	}
 
@@ -72,7 +74,7 @@ class Subsection extends CActiveRecord
 	{
 		return array(
 			'SubsectionID' => 'Subsection',
-			'associatedSection' => 'Associated Section',
+			'associatedSectionID' => 'Associated Section',
 			'sectionCode' => 'Section Code',
 			'classType' => 'Class Type',
 			'roomNumber' => 'Room Number',
@@ -103,7 +105,7 @@ class Subsection extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('SubsectionID',$this->SubsectionID);
-		$criteria->compare('associatedSection',$this->associatedSection);
+		$criteria->compare('associatedSectionID',$this->associatedSectionID);
 		$criteria->compare('sectionCode',$this->sectionCode,true);
 		$criteria->compare('classType',$this->classType,true);
 		$criteria->compare('roomNumber',$this->roomNumber);

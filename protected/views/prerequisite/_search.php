@@ -12,13 +12,13 @@
 )); ?>
 
 	<div class="row">
-		<?php echo $form->label($model,'associatedCourse'); ?>
-		<?php echo $form->textField($model,'associatedCourse',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->label($model,'associatedCourseID'); ?>
+		<?php echo $form->textField($model,'associatedCourseID',array('size'=>10,'maxlength'=>10)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'prerequisite'); ?>
-		<?php echo $form->textField($model,'prerequisite',array('size'=>10,'maxlength'=>10)); ?>
+		<?php echo $form->label($model,'prerequisiteCourseID'); ?>
+		<?php echo $form->textField($model,'prerequisiteCourseID',array('size'=>10,'maxlength'=>10)); ?>
 	</div>
 
 	<div class="row buttons">

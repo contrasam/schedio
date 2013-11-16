@@ -7,12 +7,12 @@
  * @property integer $sectionID
  * @property string $associatedCourseID
  * @property string $assignedProfessorID
+ * @property string $sectionCode
  * @property string $semester
  * @property string $created
  * @property string $modified
  *
  * The followings are the available model relations:
- * @property Enrollment[] $enrollments
  * @property Course $associatedCourse
  * @property User $assignedProfessor
  * @property Subsection[] $subsections
@@ -36,13 +36,14 @@ class Section extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('associatedCourseID, assignedProfessorID, semester', 'required'),
+			array('associatedCourseID, assignedProfessorID, sectionCode, semester', 'required'),
 			array('associatedCourseID', 'length', 'max'=>10),
 			array('assignedProfessorID', 'length', 'max'=>20),
+			array('sectionCode', 'length', 'max'=>5),
 			array('semester', 'length', 'max'=>6),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('sectionID, associatedCourseID, assignedProfessorID, semester', 'safe', 'on'=>'search'),
+			array('sectionID, associatedCourseID, assignedProfessorID, sectionCode, semester', 'safe', 'on'=>'search'),
             array('modified','default',
                 'value'=>new CDbExpression('NOW()'),
                 'setOnEmpty'=>false,'on'=>'update'),
@@ -60,7 +61,6 @@ class Section extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'enrollments' => array(self::HAS_MANY, 'Enrollment', 'associateSectionID'),
 			'associatedCourse' => array(self::BELONGS_TO, 'Course', 'associatedCourseID'),
 			'assignedProfessor' => array(self::BELONGS_TO, 'User', 'assignedProfessorID'),
 			'subsections' => array(self::HAS_MANY, 'Subsection', 'associatedSection'),
@@ -77,6 +77,7 @@ class Section extends CActiveRecord
 			'sectionID' => 'Section',
 			'associatedCourseID' => 'Associated Course',
 			'assignedProfessorID' => 'Assigned Professor',
+			'sectionCode' => 'Section Code',
 			'semester' => 'Semester',
 			'created' => 'Created',
 			'modified' => 'Modified',
@@ -104,6 +105,7 @@ class Section extends CActiveRecord
 		$criteria->compare('sectionID',$this->sectionID);
 		$criteria->compare('associatedCourseID',$this->associatedCourseID,true);
 		$criteria->compare('assignedProfessorID',$this->assignedProfessorID,true);
+		$criteria->compare('sectionCode',$this->sectionCode,true);
 		$criteria->compare('semester',$this->semester,true);
 		$criteria->compare('created',$this->created,true);
 		$criteria->compare('modified',$this->modified,true);

@@ -16,24 +16,24 @@ $this->breadcrumbs=array(
     }else{
          $course = "";
         foreach($enrollments as $enrollment){
-                if(!($course == Section::model()->findByPk($enrollment->associateSection->associatedSection)->associatedCourse->courseCode)){
-                    $course = Section::model()->findByPk($enrollment->associateSection->associatedSection)->associatedCourse->courseCode;
+                if(!($course == Section::model()->findByPk($enrollment->associatedSubSection->associatedSectionID)->associatedCourse->courseCode)){
+                    $course = Section::model()->findByPk($enrollment->associatedSubSection->associatedSectionID)->associatedCourse->courseCode;
                     echo "<h4>".$course."</h4>";
                 }
-                if($enrollment->associateSection->classType == 'LECT'){
-                    echo "Section : <b>".$enrollment->associateSection->sectionCode."</b> Type: LEC<br/>";
-                }else if($enrollment->associateSection->classType == 'TUTO'){
-                    echo "Section : <b>".$enrollment->associateSection->sectionCode."</b> Type: TUT <a href='/schedio/index.php/enrollment/update/".$enrollment->EnrollmentID."'>Change Section</a><br/>";
+                if($enrollment->associatedSubSection->classType == 'LECT'){
+                    echo "Section : <b>".$enrollment->associatedSubSection->sectionCode."</b> Type: LEC<br/>";
+                }else if($enrollment->associatedSubSection->classType == 'TUTO'){
+                    echo "Section : <b>".$enrollment->associatedSubSection->sectionCode."</b> Type: TUT <a href='/schedio/index.php/enrollment/update/".$enrollment->EnrollmentID."'>Change Section</a><br/>";
 
                 }
-                foreach($enrollment->associateSection->sectiontimes as $sectionTime){
+                foreach($enrollment->associatedSubSection->sectiontimes as $sectionTime){
                     echo $sectionTime->day." | from ".$sectionTime->fromTime." | to ".$sectionTime->toTime;
                     echo "<br/>";
                 }
                 echo CHtml::link(
                     'Drop Section',
                     array('/enrollment/delete/','id'=>$enrollment->EnrollmentID),
-                    array('confirm' => 'Confirm by pressing OK to drop section')
+                    array('confirm' => 'Confirm by pressing OK to drop section (This will remove you also from all related courses)')
                 );
                 echo "<br/>";
                 echo "<br/>";

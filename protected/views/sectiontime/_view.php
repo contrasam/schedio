@@ -5,7 +5,7 @@
 
 <div class="view">
 
-    <b><?php echo CHtml::encode("Course Name = ".$data->associatedSubSection0->associatedSection0->associatedCourse->courseName." | Professor Net Name = ".$data->associatedSubSection0->associatedSection0->assignedProfessor->netName." | Section Code = ".$data->associatedSubSection0->sectionCode); ?></b><br/>
+    <b><?php echo CHtml::encode("Course Name = ".$data->associatedSubSection0->associatedSection->associatedCourse->courseName." | Professor Net Name = ".$data->associatedSubSection0->associatedSection->assignedProfessor->netName." | Section Code = ".$data->associatedSubSection0->sectionCode); ?></b><br/>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('day')); ?>:</b>

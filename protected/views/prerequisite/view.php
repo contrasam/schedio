@@ -21,8 +21,8 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'associatedCourse',
-		'prerequisite',
+		'associatedCourseID',
+		'prerequisiteCourseID',
 		'created',
 		'modified',
 	),

@@ -6,6 +6,6 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>Update Section <?php echo $model->associateSection->associatedSection0->associatedCourse->courseCode; ?></h1>
+<h1>Update Section <?php echo $model->associatedSubSection->associatedSection->associatedCourse->courseCode; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

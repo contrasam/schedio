@@ -31,6 +31,12 @@
 		<?php echo $form->error($model,'associatedCourseID'); ?>
 	</div>
 
+    <div class="row">
+        <?php echo $form->labelEx($model,'sectionCode'); ?>
+        <?php echo $form->textField($model,'sectionCode',array('size'=>6,'maxlength'=>6)); ?>
+        <?php echo $form->error($model,'sectionCode'); ?>
+    </div>
+
 	<div class="row">
 		<?php echo $form->labelEx($model,'assignedProfessorID'); ?>
         <?php $users = User::model()->findAllByAttributes(array('roleID' => 'PROFESSOR'));

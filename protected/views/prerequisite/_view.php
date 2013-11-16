@@ -5,12 +5,12 @@
 
 <div class="view">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('associatedCourse')); ?>:</b>
-	<?php echo CHtml::encode($data->associatedCourse0->courseCode); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('associatedCourseID')); ?>:</b>
+	<?php echo CHtml::encode($data->associatedCourse->courseCode); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('prerequisite')); ?>:</b>
-	<?php echo CHtml::encode($data->prerequisite0->courseCode); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('prerequisiteCourseID')); ?>:</b>
+	<?php echo CHtml::encode($data->prerequisiteCourse->courseCode); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('created')); ?>:</b>

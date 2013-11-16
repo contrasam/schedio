@@ -6,7 +6,7 @@
 <div class="view">
 
 	<?php
-    $section = Section::model()->findByPk($data->associatedSection);
+    $section = Section::model()->findByPk($data->associatedSectionID);
     ?>
 
 	<b><?php echo CHtml::encode("Course Name = ".$section->associatedCourse->courseName." | Professor Net Name = ".$section->assignedProfessor->netName); ?></b><br/>

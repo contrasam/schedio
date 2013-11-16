@@ -33,7 +33,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'day'); ?>
-        <?php echo $form->dropDownList($model,'day',array('' => 'Select Day','MON' => 'Monday','TUE' => 'Tuesday','WED' => 'Wednesday','THR' => 'Thursday','FRI' => 'Friday','SAT' => 'Saturday','SUN' => 'Sunday'))?>
+        <?php echo $form->dropDownList($model,'day',array('' => 'Select Day','MON' => 'Monday','TUE' => 'Tuesday','WED' => 'Wednesday','THU' => 'Thursday','FRI' => 'Friday','SAT' => 'Saturday','SUN' => 'Sunday'))?>
 		<?php echo $form->error($model,'day'); ?>
 	</div>
 

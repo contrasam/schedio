@@ -5,7 +5,7 @@
  *
  * The followings are the available columns in table 'user':
  * @property string $userID
- * @property integer $userStatus
+ * @property integer $userStatusID
  * @property string $roleID
  * @property string $deptID
  * @property string $netName
@@ -23,7 +23,7 @@
  * @property Messaging[] $messagings1
  * @property Section[] $sections
  * @property Transcript[] $transcripts
- * @property Userstatus $userStatus0
+ * @property Userstatus $userStatus
  */
 class User extends CActiveRecord
 {
@@ -43,8 +43,8 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('userID, userStatus, roleID, deptID, netName, password, firstName, lastName, emailAddress, created, modified', 'required'),
-			array('userStatus', 'numerical', 'integerOnly'=>true),
+			array('userID, userStatusID, roleID, deptID, netName, password, firstName, lastName, emailAddress, created, modified', 'required'),
+			array('userStatusID', 'numerical', 'integerOnly'=>true),
 			array('userID', 'length', 'max'=>20),
 			array('roleID', 'length', 'max'=>9),
 			array('deptID', 'length', 'max'=>5),
@@ -52,7 +52,7 @@ class User extends CActiveRecord
 			array('lastLogin', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('userID, userStatus, roleID, deptID, netName, password, firstName, lastName, emailAddress, lastLogin, created, modified', 'safe', 'on'=>'search'),
+			array('userID, userStatusID, roleID, deptID, netName, password, firstName, lastName, emailAddress, lastLogin, created, modified', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -69,7 +69,7 @@ class User extends CActiveRecord
 			'messagings1' => array(self::HAS_MANY, 'Messaging', 'toID'),
 			'sections' => array(self::HAS_MANY, 'Section', 'assignedProfessorID'),
 			'transcripts' => array(self::HAS_MANY, 'Transcript', 'associateStudentID'),
-			'userStatus0' => array(self::BELONGS_TO, 'Userstatus', 'userStatus'),
+			'userStatus' => array(self::BELONGS_TO, 'Userstatus', 'userStatusID'),
 		);
 	}
 
@@ -80,7 +80,7 @@ class User extends CActiveRecord
 	{
 		return array(
 			'userID' => 'User',
-			'userStatus' => 'User Status',
+			'userStatusID' => 'User Status',
 			'roleID' => 'Role',
 			'deptID' => 'Dept',
 			'netName' => 'Net Name',
@@ -113,7 +113,7 @@ class User extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('userID',$this->userID,true);
-		$criteria->compare('userStatus',$this->userStatus);
+		$criteria->compare('userStatusID',$this->userStatusID);
 		$criteria->compare('roleID',$this->roleID,true);
 		$criteria->compare('deptID',$this->deptID,true);
 		$criteria->compare('netName',$this->netName,true);

@@ -20,15 +20,15 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'associatedSection'); ?>
+		<?php echo $form->labelEx($model,'associatedSectionID'); ?>
         <?php $sections = Section::model()->findAll();
         $list = CHtml::listData($sections,
-            'sectionID', 'sectionID');
-        echo $form->dropDownList($model, 'associatedSection',
+            'sectionID', 'sectionCode');
+        echo $form->dropDownList($model, 'associatedSectionID',
             $list,
             array('empty' => 'Select a section'));
         ?>
-		<?php echo $form->error($model,'associatedSection'); ?>
+		<?php echo $form->error($model,'associatedSectionID'); ?>
 	</div>
 
 	<div class="row">

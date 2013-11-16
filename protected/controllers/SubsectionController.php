@@ -63,21 +63,18 @@ class SubsectionController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Subsection;
+        $model=new Subsection;
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+        if(isset($_POST['Subsection']))
+        {
+            $model->attributes=$_POST['Subsection'];
+            if($model->save())
+                $this->redirect(array('view','id'=>$model->SubsectionID));
+        }
 
-		if(isset($_POST['Subsection']))
-		{
-			$model->attributes=$_POST['Subsection'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->SubsectionID));
-		}
-
-		$this->render('create',array(
-			'model'=>$model,
-		));
+        $this->render('create',array(
+            'model'=>$model,
+        ));
 	}
 
 	/**

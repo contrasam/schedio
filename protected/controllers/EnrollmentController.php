@@ -39,7 +39,7 @@ class EnrollmentController extends Controller
             'associatedStudentID' => $model->associatedStudentID,
         ));
         foreach($linkedEnrollments as $enrollment){
-            if($enrollment->associateSection->associatedSection0->sectionID == $model->associateSection->associatedSection0->sectionID ){
+            if($enrollment->associatedSubSection->associatedSection->sectionID == $model->associatedSubSection->associatedSection->sectionID ){
                 $enrollment->delete();
             }
         }

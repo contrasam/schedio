@@ -20,16 +20,16 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'associateSectionID'); ?>
+		<?php echo $form->labelEx($model,'associatedSubSectionID'); ?>
         <?php
         $sections = Subsection::model()->findAllByAttributes(array(
-            'associatedSection' => $model->associateSection->associatedSection0->sectionID,
+            'associatedSectionID' => $model->associatedSubSection->associatedSection->sectionID,
             'classType' => 'TUTO'
         ));
         $list = CHtml::listData($sections,'SubsectionID', 'sectionCode');
         ?>
-		<?php echo $form->dropDownList($model,'associateSectionID',$list); ?>
-		<?php echo $form->error($model,'associateSectionID'); ?>
+		<?php echo $form->dropDownList($model,'associatedSubSectionID',$list); ?>
+		<?php echo $form->error($model,'associatedSubSectionID'); ?>
 	</div>
 
 	<div class="row buttons">

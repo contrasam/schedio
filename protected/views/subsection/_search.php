@@ -17,8 +17,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'associatedSection'); ?>
-		<?php echo $form->textField($model,'associatedSection'); ?>
+		<?php echo $form->label($model,'associatedSectionID'); ?>
+		<?php echo $form->textField($model,'associatedSectionID'); ?>
 	</div>
 
 	<div class="row">

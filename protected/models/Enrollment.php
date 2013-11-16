@@ -6,14 +6,16 @@
  * The followings are the available columns in table 'enrollment':
  * @property integer $EnrollmentID
  * @property string $associatedStudentID
- * @property integer $associateSectionID
+ * @property integer $associatedSubSectionID
+ * @property string $associatedCourseID
  * @property string $status
  * @property string $created
  * @property string $modified
  *
  * The followings are the available model relations:
  * @property User $associatedStudent
- * @property Subsection $associateSection
+ * @property Subsection $associatedSubSection
+ * @property Course $associatedCourse
  */
 class Enrollment extends CActiveRecord
 {
@@ -33,13 +35,19 @@ class Enrollment extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('associatedStudentID, associateSectionID, status, created, modified', 'required'),
-			array('associateSectionID', 'numerical', 'integerOnly'=>true),
+			array('associatedStudentID, associatedSubSectionID, associatedCourseID, status', 'required'),
+			array('associatedSubSectionID', 'numerical', 'integerOnly'=>true),
 			array('associatedStudentID', 'length', 'max'=>20),
-			array('status', 'length', 'max'=>10),
+			array('associatedCourseID, status', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('EnrollmentID, associatedStudentID, associateSectionID, status, created, modified', 'safe', 'on'=>'search'),
+			array('EnrollmentID, associatedStudentID, associatedSubSectionID, associatedCourseID, status', 'safe', 'on'=>'search'),
+            array('modified','default',
+                'value'=>new CDbExpression('NOW()'),
+                'setOnEmpty'=>false,'on'=>'update'),
+            array('created,modified','default',
+                'value'=>new CDbExpression('NOW()'),
+                'setOnEmpty'=>false,'on'=>'insert')
 		);
 	}
 
@@ -52,7 +60,8 @@ class Enrollment extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'associatedStudent' => array(self::BELONGS_TO, 'User', 'associatedStudentID'),
-			'associateSection' => array(self::BELONGS_TO, 'Subsection', 'associateSectionID'),
+			'associatedSubSection' => array(self::BELONGS_TO, 'Subsection', 'associatedSubSectionID'),
+			'associatedCourse' => array(self::BELONGS_TO, 'Course', 'associatedCourseID'),
 		);
 	}
 
@@ -64,7 +73,8 @@ class Enrollment extends CActiveRecord
 		return array(
 			'EnrollmentID' => 'Enrollment',
 			'associatedStudentID' => 'Associated Student',
-			'associateSectionID' => 'Associate Section',
+			'associatedSubSectionID' => 'Associated Sub Section',
+			'associatedCourseID' => 'Associated Course',
 			'status' => 'Status',
 			'created' => 'Created',
 			'modified' => 'Modified',
@@ -91,7 +101,8 @@ class Enrollment extends CActiveRecord
 
 		$criteria->compare('EnrollmentID',$this->EnrollmentID);
 		$criteria->compare('associatedStudentID',$this->associatedStudentID,true);
-		$criteria->compare('associateSectionID',$this->associateSectionID);
+		$criteria->compare('associatedSubSectionID',$this->associatedSubSectionID);
+		$criteria->compare('associatedCourseID',$this->associatedCourseID,true);
 		$criteria->compare('status',$this->status,true);
 		$criteria->compare('created',$this->created,true);
 		$criteria->compare('modified',$this->modified,true);

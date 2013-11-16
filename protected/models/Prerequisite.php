@@ -5,14 +5,14 @@
  *
  * The followings are the available columns in table 'prerequisite':
  * @property integer $PrerequisiteID
- * @property string $associatedCourse
- * @property string $prerequisite
+ * @property string $associatedCourseID
+ * @property string $prerequisiteCourseID
  * @property string $created
  * @property string $modified
  *
  * The followings are the available model relations:
- * @property Course $associatedCourse0
- * @property Course $prerequisite0
+ * @property Course $associatedCourse
+ * @property Course $prerequisiteCourse
  */
 class Prerequisite extends CActiveRecord
 {
@@ -32,11 +32,11 @@ class Prerequisite extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('associatedCourse, prerequisite', 'required'),
-			array('associatedCourse, prerequisite', 'length', 'max'=>10),
+			array('associatedCourseID, prerequisiteCourseID', 'required'),
+			array('associatedCourseID, prerequisiteCourseID', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('PrerequisiteID, associatedCourse, prerequisite', 'safe', 'on'=>'search'),
+			array('PrerequisiteID, associatedCourseID, prerequisiteCourseID', 'safe', 'on'=>'search'),
             array('modified','default',
                 'value'=>new CDbExpression('NOW()'),
                 'setOnEmpty'=>false,'on'=>'update'),
@@ -54,8 +54,8 @@ class Prerequisite extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'associatedCourse0' => array(self::BELONGS_TO, 'Course', 'associatedCourse'),
-			'prerequisite0' => array(self::BELONGS_TO, 'Course', 'prerequisite'),
+			'associatedCourse' => array(self::BELONGS_TO, 'Course', 'associatedCourseID'),
+			'prerequisiteCourse' => array(self::BELONGS_TO, 'Course', 'prerequisiteCourseID'),
 		);
 	}
 
@@ -66,8 +66,8 @@ class Prerequisite extends CActiveRecord
 	{
 		return array(
 			'PrerequisiteID' => 'Prerequisite',
-			'associatedCourse' => 'Associated Course',
-			'prerequisite' => 'Prerequisite',
+			'associatedCourseID' => 'Associated Course',
+			'prerequisiteCourseID' => 'Prerequisite Course',
 			'created' => 'Created',
 			'modified' => 'Modified',
 		);
@@ -92,8 +92,8 @@ class Prerequisite extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('PrerequisiteID',$this->PrerequisiteID);
-		$criteria->compare('associatedCourse',$this->associatedCourse,true);
-		$criteria->compare('prerequisite',$this->prerequisite,true);
+		$criteria->compare('associatedCourseID',$this->associatedCourseID,true);
+		$criteria->compare('prerequisiteCourseID',$this->prerequisiteCourseID,true);
 		$criteria->compare('created',$this->created,true);
 		$criteria->compare('modified',$this->modified,true);
 
