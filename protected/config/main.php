@@ -9,6 +9,10 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Schedio',
 
+    'aliases' => array(
+        'bootstrap' => realpath(__DIR__ . '/../extensions/bootstrap'),
+    ),
+
 	// preloading 'log' component
 	'preload'=>array('log'),
 
@@ -16,6 +20,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+        'bootstrap.helpers.TbHtml',
 	),
 
 	'modules'=>array(
@@ -25,6 +30,7 @@ return array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'gii',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
+            'generatorPaths' => array('bootstrap.gii'),
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
 
@@ -51,7 +57,11 @@ return array(
                 '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
                 '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
+
 		),
+        'bootstrap' => array(
+            'class' => 'bootstrap.components.TbApi',
+        ),
 
         /*
 		'db'=>array(
