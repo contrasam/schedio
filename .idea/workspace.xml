@@ -2,125 +2,380 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4354030-8d2c-42eb-9cac-ffcdc6fab0ee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/img/glyphicons-halflings-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/img/glyphicons-halflings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/img/loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/BootstrapCode.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/BootstrapGenerator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/unit/CodeGuy.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/_helpers/CodeHelper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/PreferenceForm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/ScheduleController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbActiveForm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbAffix.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbAlert.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/components/TbApi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/helpers/TbArray.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/unit/TbArrayTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbBreadcrumb.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbButtonColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbCollapse.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbDataColumn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbDetailView.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/form/TbForm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/form/TbFormButtonElement.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/form/TbFormInputElement.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbGridView.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbHeroUnit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/helpers/TbHtml.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/unit/TbHtmlTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbListView.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbModal.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbNav.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbNavbar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbPager.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbScrollspy.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbTabs.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/unit/TbTestCase.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbThumbnails.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/widgets/TbTypeAhead.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/behaviors/TbWidget.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/_helpers/TestHelper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/_helpers/WebHelper.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/schedule/_ajaxCourses.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/_bootstrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/unit/_bootstrap.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/templates/default/_form.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/schedule/_preference.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/templates/default/_search.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/templates/default/_view.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/accordion.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/templates/default/admin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/alerts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/css/bootstrap-responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/css/bootstrap-responsive.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/bootstrap.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/breadcrumbs.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/button-groups.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/buttons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/carousel.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/close.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/code.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/codeception.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/component-animations.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/composer.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/composer.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/templates/default/controller.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/templates/default/create.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/dropdowns.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/_data/dump.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/forms.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/grid.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/hero-unit.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/templates/default/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/views/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/schedule/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/labels-badges.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/layouts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/media.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/modals.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/navbar.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/navs.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/pager.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/pagination.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/popovers.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/progress-bars.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/reset.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/responsive-1200px-min.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/responsive-767px-max.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/responsive-768px-979px.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/responsive-navbar.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/responsive-utilities.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/responsive.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/scaffolding.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/sprites.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/tables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/thumbnails.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/tooltip.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/type.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/tests/unit.suite.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/templates/default/update.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/utilities.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/templates/default/view.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/wells.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/css/yiistrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/less/yiistrap.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/extensions/bootstrap/assets/css/yiistrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/sectiontime/admin.php" afterPath="$PROJECT_DIR$/protected/views/sectiontime/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/module/templates/commented/components/.yii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/module/templates/commented/messages/.yii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/module/templates/commented/models/.yii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/module/templates/commented/views/layouts/.yii" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CAccessControlFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CAccessRule.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CAction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CActiveDataProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CActiveFinder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CActiveForm.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CActiveRecord.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CActiveRecordBehavior.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CActiveRecordMetaData.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CActiveRelation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CApcCache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CApplication.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CApplicationComponent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CArrayDataProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CAssetManager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CAttributeCollection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CAuthAssignment.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CAuthItem.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CAuthManager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CAutoComplete.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CBaseActiveRelation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CBaseController.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CBaseListView.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CBasePager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CBaseUserIdentity.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CBehavior.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CBelongsToRelation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CBooleanValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CBreadcrumbs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CButtonColumn.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CCache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CCacheDependency.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CCacheHttpSession.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CCaptcha.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CCaptchaAction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CCaptchaValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CChainedCacheDependency.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CCheckBoxColumn.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CChoiceFormat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CClientScript.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CClipWidget.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CCodeFile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CCodeForm.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CCodeGenerator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CCodeModel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CCompareValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CComponent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CConfiguration.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CConsoleApplication.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CConsoleCommand.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CConsoleCommandRunner.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CContentDecorator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CController.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CCookieCollection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDataColumn.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDataProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDateFormatter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDateTimeParser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDateValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDbAuthManager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDbCache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDbCacheDependency.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDbColumnSchema.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDbCommand.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDbCommandBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDbConnection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDbCriteria.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDbDataReader.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDbException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDbExpression.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDbHttpSession.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDbLogRoute.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDbMessageSource.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDbMigration.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDbSchema.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDbTableSchema.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDbTransaction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDefaultValueValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDetailView.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDirectoryCacheDependency.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CDummyCache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CEAcceleratorCache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CEmailLogRoute.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CEmailValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CEnumerable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CErrorEvent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CErrorHandler.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CEvent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CExceptionEvent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CExistValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CExpressionDependency.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CExtController.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CFileCache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CFileCacheDependency.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CFileHelper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CFileLogRoute.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CFileValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CFilterChain.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CFilterValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CFilterWidget.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CFlexWidget.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CForm.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CFormButtonElement.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CFormElement.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CFormElementCollection.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CFormInputElement.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CFormModel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CFormStringElement.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CFormatter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CGettextFile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CGettextMessageSource.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CGettextMoFile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CGettextPoFile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CGlobalStateCacheDependency.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CGoogleApi.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CGridColumn.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CGridView.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CHasManyRelation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CHasOneRelation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CHelpCommand.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CHtml.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CHtmlPurifier.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CHttpCookie.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CHttpException.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CHttpRequest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CHttpSession.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CHttpSessionIterator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CInlineAction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CInlineFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CInlineValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CInputWidget.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJSON.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJavaScript.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJoinElement.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJoinQuery.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJuiAccordion.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJuiAutoComplete.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJuiButton.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJuiDatePicker.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJuiDialog.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJuiDraggable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJuiDroppable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJuiInputWidget.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJuiProgressBar.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJuiResizable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJuiSelectable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJuiSlider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJuiSliderInput.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJuiSortable.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJuiTabs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CJuiWidget.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CLinkColumn.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CLinkPager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CListIterator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CListPager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CListView.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CLocale.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CLogFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CLogRoute.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CLogRouter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CLogger.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CManyManyRelation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMap.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMapIterator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMarkdown.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMarkdownParser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMaskedTextField.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMemCache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMemCacheServerConfiguration.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMessageSource.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMissingTranslationEvent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CModel.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CModelBehavior.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CModelEvent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CModule.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMssqlColumnSchema.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMssqlCommandBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMssqlPdoAdapter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMssqlSchema.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMssqlTableSchema.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMultiFileUpload.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMysqlColumnSchema.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMysqlSchema.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CMysqlTableSchema.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CNumberFormatter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CNumberValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/COciColumnSchema.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/COciCommandBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/COciSchema.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/COciTableSchema.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/COutputCache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/COutputEvent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/COutputProcessor.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CPagination.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CPgsqlColumnSchema.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CPgsqlSchema.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CPgsqlTableSchema.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CPhpAuthManager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CPhpMessageSource.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CPortlet.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CPradoViewRenderer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CProfileLogRoute.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CPropertyValue.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CQueue.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CQueueIterator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CRangeValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CRegularExpressionValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CRequiredValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CSafeValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CSecurityManager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CSoapObjectWrapper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CSort.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CSqlDataProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CSqliteColumnSchema.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CSqliteCommandBuilder.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CSqliteSchema.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CStack.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CStackIterator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CStarRating.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CStatElement.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CStatRelation.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CStatePersister.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CStringValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CTabView.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CTextHighlighter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CTheme.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CThemeManager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CTimestamp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CTimestampBehavior.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CTreeView.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CTypeValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CTypedList.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CTypedMap.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CUniqueValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CUnsafeValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CUploadedFile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CUrlManager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CUrlRule.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CUrlValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CUserIdentity.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CValidator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CVarDumper.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CViewAction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CViewRenderer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CWebApplication.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CWebLogRoute.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CWebModule.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CWebService.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CWebServiceAction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CWebUser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CWidget.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CWidgetFactory.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CWinCache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CWsdlGenerator.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CXCache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CZendDataCache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/Comment.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/CommentController.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/ContactForm.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/Controller.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/module/templates/commented/controllers/DefaultController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/DocsCommand.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/DocsModel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/GiiModule.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/IAction.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/IApplicationComponent.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/IAuthManager.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/IBehavior.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/ICache.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/ICacheDependency.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/IDataProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/IFilter.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/IStatePersister.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/IUserIdentity.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/IViewRenderer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/IWebServiceProvider.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/IWebUser.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/IWidgetFactory.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/LoginForm.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/Lookup.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/controllers/OverlapCalculator.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/Post.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/PostController.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/RecentComments.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/SiteController.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/Tag.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/TagCloud.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/User.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/UserIdentity.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/UserMenu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/Yii.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/YiiBase.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/schedule/_ajaxStatus.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/crud/templates/commented/_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/crud/templates/commented/_search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/crud/templates/commented/_view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/form/templates/commented/action.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/crud/templates/commented/admin.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/css/api.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/assets/css/api.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.comment._form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.comment._view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.comment.index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.comment.update.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.layouts.column1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.layouts.column2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.layouts.main.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.post._comments.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.post._form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.post._view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.post.admin.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.post.create.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.post.index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.post.update.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.post.view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.site.contact.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.site.error.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.site.login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/application.views.site.pages.about.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/views/chmContents.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/views/chmIndex.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/views/chmProject.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/views/class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/views/classSummary.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/controller/templates/commented/controller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/crud/templates/commented/controller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/crud/templates/commented/create.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/views/eventDetails.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/views/eventSummary.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/form/templates/commented/form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/views/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/crud/templates/commented/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/module/templates/commented/views/default/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/assets/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/keywords.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/layouts/main.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/manual.hhc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/manual.hhk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/manual.hhp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/views/methodDetails.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/views/methodSummary.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/model/templates/commented/model.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/module/templates/commented/module.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/packages.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/views/propertyDetails.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/views/propertySummary.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/views/seeAlso.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/views/sourceCode.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/blogexample/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/assets/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/crud/templates/commented/update.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/views/usesDetails.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/views/usesSummary.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/views/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/controller/templates/commented/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/giitemplates/crud/templates/commented/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/commands/docs/views/viewSummary.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/PreferenceForm.php" afterPath="$PROJECT_DIR$/protected/models/PreferenceForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/ScheduleController.php" afterPath="$PROJECT_DIR$/protected/controllers/ScheduleController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/schedule/_ajaxCourses.php" afterPath="$PROJECT_DIR$/protected/views/schedule/_ajaxCourses.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/schedule/_preference.php" afterPath="$PROJECT_DIR$/protected/views/schedule/_preference.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/schedule/index.php" afterPath="$PROJECT_DIR$/protected/views/schedule/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="schedio.yii.iws" />
@@ -143,7 +398,17 @@
     <favorites_list name="schedio.yii" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="ScheduleController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/ScheduleController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="96" column="46" selection-start="4163" selection-end="4163" vertical-scroll-proportion="-4.85348" vertical-offset="4197" max-vertical-offset="4998">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -162,7 +427,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/views/sectiontime/_form.php" />
         <option value="$PROJECT_DIR$/protected/models/Enrollment.php" />
         <option value="$PROJECT_DIR$/protected/views/enrollment/index.php" />
         <option value="$PROJECT_DIR$/protected/views/enrollment/update.php" />
@@ -171,13 +435,14 @@
         <option value="$PROJECT_DIR$/protected/controllers/QuoteController.php" />
         <option value="$PROJECT_DIR$/protected/views/sectiontime/admin.php" />
         <option value="$PROJECT_DIR$/protected/views/schedule/_list.php" />
-        <option value="$PROJECT_DIR$/protected/models/PreferenceForm.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/ScheduleController.php" />
-        <option value="$PROJECT_DIR$/protected/views/schedule/_ajaxCourses.php" />
         <option value="$PROJECT_DIR$/protected/config/main.php" />
-        <option value="$PROJECT_DIR$/protected/views/schedule/index.php" />
-        <option value="$PROJECT_DIR$/protected/views/schedule/_preference.php" />
         <option value="$PROJECT_DIR$/protected/views/course/index.php" />
+        <option value="$PROJECT_DIR$/protected/models/PreferenceForm.php" />
+        <option value="$PROJECT_DIR$/protected/views/schedule/_preference.php" />
+        <option value="$PROJECT_DIR$/protected/views/schedule/_ajaxCourses.php" />
+        <option value="$PROJECT_DIR$/protected/views/schedule/index.php" />
+        <option value="$PROJECT_DIR$/protected/views/schedule/_ajaxStatus.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/ScheduleController.php" />
       </list>
     </option>
   </component>
@@ -218,7 +483,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -237,8 +501,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schedio.yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schedio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,6 +558,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\schedio\protected\commands" />
+      <recent name="C:\xampp\htdocs\schedio\protected\controllers" />
       <recent name="C:\xampp\htdocs\schedio\protected\extensions" />
       <recent name="C:\xampp\htdocs\schedio\protected\data" />
       <recent name="C:\xampp\htdocs\schedio\protected\views\enrollment" />
@@ -368,7 +649,11 @@
       <created>1384643188221</created>
       <updated>1384643188221</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added Schedule Generator prototype">
+      <created>1384764513563</created>
+      <updated>1384764513563</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -392,7 +677,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -432,98 +717,119 @@
     <MESSAGE value="Authentication implemented against User table" />
     <MESSAGE value="Admin Console Implemented,and Student console partially implemented" />
     <MESSAGE value="Added SQL Script for application" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added SQL Script for application" />
+    <MESSAGE value="Added Schedule Generator prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Schedule Generator prototype" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/views/sectiontime/_form.php">
+    <entry file="file://$PROJECT_DIR$/protected/controllers/CourseController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="1115" selection-start="1528" selection-end="2635" vertical-scroll-proportion="0.31501833" vertical-offset="525" max-vertical-offset="1071" />
+        <state line="141" column="36" selection-start="3475" selection-end="3475" vertical-scroll-proportion="0.3881932" vertical-offset="2180" max-vertical-offset="3060" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/PreferenceForm.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/course/_search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="20" selection-start="531" selection-end="531" vertical-scroll-proportion="0.6994633" vertical-offset="0" max-vertical-offset="833" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/SectiontimeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="84.34615" vertical-offset="2193" max-vertical-offset="3060" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/sectiontime/_search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="18" selection-start="246" selection-end="249" vertical-scroll-proportion="0.3041145" vertical-offset="0" max-vertical-offset="1020" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/ScheduleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="47" selection-start="264" selection-end="264" vertical-scroll-proportion="-0.0035778175" vertical-offset="172" max-vertical-offset="731" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Prerequisite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="59" selection-start="858" selection-end="878" vertical-scroll-proportion="0.12164579" vertical-offset="510" max-vertical-offset="2057" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Section.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="81" selection-start="1004" selection-end="1012" vertical-scroll-proportion="0.2701252" vertical-offset="495" max-vertical-offset="2278" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Subsection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="25" selection-start="2209" selection-end="2221" vertical-scroll-proportion="-22.23077" vertical-offset="510" max-vertical-offset="2363" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Course.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="50" selection-start="911" selection-end="918" vertical-scroll-proportion="0.0" vertical-offset="629" max-vertical-offset="2227" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Sectiontime.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="54" selection-start="873" selection-end="881" vertical-scroll-proportion="0.4257603" vertical-offset="357" max-vertical-offset="2142" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/schedule/_ajaxCourses.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0036630037" vertical-offset="151" max-vertical-offset="697" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/extensions/bootstrap/gii/bootstrap/views/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="29" selection-start="900" selection-end="900" vertical-scroll-proportion="0.881932" vertical-offset="0" max-vertical-offset="1224">
-          <folding />
-        </state>
+        <state line="9" column="50" selection-start="177" selection-end="223" vertical-scroll-proportion="0.27370304" vertical-offset="0" max-vertical-offset="1020" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/schedule/_preference.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
+        <state line="65" column="136" selection-start="5064" selection-end="5064" vertical-scroll-proportion="2.0238094" vertical-offset="0" max-vertical-offset="1394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/schedule/_ajaxCourses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1531" selection-end="1531" vertical-scroll-proportion="1.1831502" vertical-offset="0" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/PreferenceForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="209" selection-start="861" selection-end="861" vertical-scroll-proportion="0.6849817" vertical-offset="153" max-vertical-offset="935">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/schedule/index.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="39" selection-start="3131" selection-end="3131" vertical-scroll-proportion="-0.6726297" vertical-offset="1770" max-vertical-offset="2329">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/schedule/_ajaxStatus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="121" selection-end="121" vertical-scroll-proportion="0.21288015" vertical-offset="0" max-vertical-offset="559">
+          <folding>
+            <element signature="e#6#95#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Enrollment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="33" selection-start="2077" selection-end="2097" vertical-scroll-proportion="-24.846153" vertical-offset="408" max-vertical-offset="2227">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/OverlapCalculator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.9578755" vertical-offset="1069" max-vertical-offset="1615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Section.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="29" selection-start="1990" selection-end="2006" vertical-scroll-proportion="-7.8461537" vertical-offset="867" max-vertical-offset="2278">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/ContactForm.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/Course.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="10" selection-start="2038" selection-end="2038" vertical-scroll-proportion="0.923221" vertical-offset="578" max-vertical-offset="1904">
+        <state line="37" column="29" selection-start="887" selection-end="897" vertical-scroll-proportion="-2.6153846" vertical-offset="561" max-vertical-offset="2227">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/course/index.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/Sectiontime.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="559">
+        <state line="58" column="34" selection-start="1763" selection-end="1784" vertical-scroll-proportion="0.7602862" vertical-offset="561" max-vertical-offset="2142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Subsection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="30" selection-start="2292" selection-end="2309" vertical-scroll-proportion="0.0970696" vertical-offset="1052" max-vertical-offset="2363">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.3374126" vertical-offset="193" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/ScheduleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="46" selection-start="4163" selection-end="4163" vertical-scroll-proportion="-4.85348" vertical-offset="4197" max-vertical-offset="4998">
           <folding />
         </state>
       </provider>

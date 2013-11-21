@@ -1,5 +1,6 @@
 <?php
 foreach ($courses as $subSection) {
+    echo "<div id=section_".$subSection->SubsectionID." class='view'>";
     echo "<b>" . $subSection->associatedSection->associatedCourse->courseName . "</b> " . $subSection->associatedSection->associatedCourse->courseCode ." <b>".$subSection->associatedSection->associatedCourse->credits. " credits</b> <br/>";
     $first = true;
     foreach (getPrerequisites($subSection->associatedSection->associatedCourse->courseID) as $pCourse) {
@@ -19,6 +20,8 @@ foreach ($courses as $subSection) {
     }
     echo "<br/>";
     echo "<br/>";
+    echo "<input type='button' id='button_".$subSection->SubsectionID."' onclick='addSection(".$subSection->SubsectionID.")' value='Add Course'>";
+    echo "</div>";
 }
 
 function getPrerequisites($courseID)
@@ -33,3 +36,4 @@ function getPrerequisites($courseID)
     }
     return $courseList;
 }
+

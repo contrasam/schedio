@@ -31,6 +31,12 @@ class PreferenceForm extends CFormModel
     public $toTimeS;
     public $toTimeU;
 
+    public function rules()
+    {
+        return array(
+            array('semester, dayM, dayT, dayW, dayR, dayF, dayS, dayU, fromTimeM, fromTimeT, fromTimeW, fromTimeR, fromTimeF, fromTimeS, fromTimeU, toTimeM, toTimeT, toTimeW, toTimeR, toTimeF, toTimeS, toTimeU', 'required'),
+        );
+    }
 
     public function attributeLabels()
     {
