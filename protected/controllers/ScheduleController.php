@@ -19,6 +19,7 @@ class ScheduleController extends Controller
             'model' => $model,
             'courses' => $data,
             'sectionIDs' => '',
+            'subSectionIDs' => '',
         ));
     }
 
@@ -36,7 +37,9 @@ class ScheduleController extends Controller
         $response = Yii::app()->db->createCommand('CALL `getStudentEligibleCourse`(\'6934153\', \'2013\')');
 
         foreach ($response->queryAll() as $row) {
-            $sections[] = Subsection::model()->findByPk($row['SubsectionID']);
+            $sections[] = Subsection::model()->findByAttributes(array(
+                'SubsectionID' => $row['SubsectionID'],
+            ));
         }
 
 
@@ -235,15 +238,20 @@ class ScheduleController extends Controller
     public function actionGenerateSchedule()
     {
         $sectionIDs = Yii::app()->request->getPost('SectionIDs');
-        $SuccessLog = array();
-        $errorLog = array();
+        $subSectionIDs = Yii::app()->request->getPost('SubSectionIDs');
+        $success = array();
+        $error = array();
+        $tempRecords = array();
 
         $sectionIDsArray = explode(",", $sectionIDs);
+        $subSectionIDsArray = explode(",", $subSectionIDs);
 
         foreach ($sectionIDsArray as $sectionID) {
-            $subSections[] = Subsection::model()->findByAttributes(array(
-                'associatedSectionID' => Subsection::model()->findByPk($sectionID)->associatedSectionID,
-            ));
+            $subSections[] = Subsection::model()->findByPk($sectionID);
+        }
+
+        foreach ($subSectionIDsArray as $sectionID) {
+            $subSections[] = Subsection::model()->findByPk($sectionID);
         }
 
         $subSections = array_filter($subSections);
@@ -251,44 +259,88 @@ class ScheduleController extends Controller
             'associatedStudentID' => '6934153',
         ));
 
-        $overlapSum = 0;
-
         foreach ($subSections as $subSection) {
-            $sectionTimes = Sectiontime::model()->findAllByAttributes(array(
+            $subSectionTimes[] = Sectiontime::model()->findByAttributes(array(
                 'associatedSubSection' => $subSection->SubsectionID,
             ));
-            if (!(empty($enrollments))) {
-                foreach ($enrollments as $enrollment) {
-                    $enrollmentTimes = Sectiontime::model()->findAllByAttributes(array(
-                        'associatedSubSection' => $enrollment->associatedSubSection->SubsectionID,
-                    ));
-                }
+        }
 
+
+        if (!(empty($enrollments))) {
+            foreach ($enrollments as $enrollment) {
+                $enrollmentTimes[] = Sectiontime::model()->findByAttributes(array(
+                    'associatedSubSection' => $enrollment->associatedSubSectionID,
+                ));
+            }
+
+            foreach ($subSectionTimes as $subSectionTime) {
                 foreach ($enrollmentTimes as $enrollmentTime) {
-                    foreach ($sectionTimes as $sectionTime) {
-                        $overlapFrom = max($enrollmentTime->fromTime, $sectionTime->fromTime);
-                        $overlapTo = min($enrollmentTime->toTime, $sectionTime->toTime);
-                        $overlapSum += strtotime($overlapTo) - strtotime($overlapFrom);
-                        var_dump($overlapSum);
-                    }
-
-                    if ($overlapSum > 15) {
-                        $errorLog[] = "Time overlap Between " . $subSection->associatedSection->associatedCourse->courseCode . " and " . $enrollmentTime->associatedSubSection0->associatedSection->associatedCourse->courseCode;
-                    } else if ($overlapSum <= 15) {
-                        $SuccessLog[] = "Eligible to register for " . $subSection->associatedSection->associatedCourse->courseCode;
+                    if ($enrollmentTime->associatedSubSection != $subSectionTime->associatedSubSection) {
+                        $overlapFrom = max($enrollmentTime->fromTime, $subSectionTime->fromTime);
+                        $overlapTo = min($enrollmentTime->toTime, $subSectionTime->toTime);
+                        $overlapSum = strtotime($overlapTo) - strtotime($overlapFrom);
+                        if ($overlapSum > 15) {
+                            $tempRecords[] = array(
+                                'subSectionID' => $subSectionTime->associatedSubSection,
+                                'ComparedSectionID' => $enrollmentTime->associatedSubSection,
+                                'overlapStatus' => true,
+                            );
+                        } else if ($overlapSum <= 15) {
+                            $tempRecords[] = array(
+                                'subSectionID' => $subSectionTime->associatedSubSection,
+                                'ComparedSectionID' => $enrollmentTime->associatedSubSection,
+                                'overlapStatus' => false,
+                            );
+                        }
+                    } else {
+                        //Already registered for course message
                     }
                 }
-            } else {
-
             }
         }
 
-        var_dump(array_filter($errorLog));
-        var_dump(array_filter($SuccessLog));
+        foreach ($subSectionTimes as $subSectionTime) {
+            foreach ($subSectionTimes as $enrollmentTime) {
+                if ($enrollmentTime->associatedSubSection != $subSectionTime->associatedSubSection) {
+                    $overlapFrom = max($enrollmentTime->fromTime, $subSectionTime->fromTime);
+                    $overlapTo = min($enrollmentTime->toTime, $subSectionTime->toTime);
+                    $overlapSum = strtotime($overlapTo) - strtotime($overlapFrom);
+                    if ($overlapSum > 15) {
+                        $tempRecords[] = array(
+                            'subSectionID' => $subSectionTime->associatedSubSection,
+                            'ComparedSectionID' => $enrollmentTime->associatedSubSection,
+                            'overlapStatus' => true,
+                        );
+                    } else if ($overlapSum <= 15) {
+                        $tempRecords[] = array(
+                            'subSectionID' => $subSectionTime->associatedSubSection,
+                            'ComparedSectionID' => $enrollmentTime->associatedSubSection,
+                            'overlapStatus' => false,
+                        );
+                    }
+                } else {
+                    //Already registered for course message
+                }
+            }
+        }
+
+        $tempRecords = array_filter($tempRecords);
+        $tempRecords = array_unique($tempRecords, SORT_REGULAR);
+
+        foreach ($tempRecords as $tempRecord) {
+            if ($tempRecord['overlapStatus'] && !empty($tempRecord)) {
+                $error[] = Subsection::model()->findByPk($tempRecord['subSectionID'])->SubsectionID;
+            } else {
+                $success[] = Subsection::model()->findByPk($tempRecord['subSectionID'])->SubsectionID;
+            }
+        }
+
+       var_dump(array_unique(array_diff($success, $error)));
 
 
         $this->renderPartial('_ajaxStatus', array(
-            'sectionIDs' => $sectionIDs
+            'sectionIDs' => $sectionIDs,
+            'subSectionIDs' => $subSectionIDs,
         ), false, true);
     }
 } 

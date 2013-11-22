@@ -2,20 +2,41 @@
 <script type="text/javascript">
 
     function addSection(id) {
+
         var srcId = "#section_" + id;
         var dscId = "addedSection_" + id;
         var dscDiv = "<div id=" + dscId + " class='view'></div>";
         var removeButton = "<input type='button' id='removeButton_" + id + "' value='Remove Course' onclick='removeSection(" + id + ")'>";
+        var subSectionIds = idsLike("SUBSEC");
+        var subSections = new Array();
+
+        for (var i in subSectionIds) {
+            if (subSectionIds[i].slice(-2) == id) {
+                $("#" + subSectionIds[i] + " input:radio:checked").each(function () {
+                    subSections.push($(this).attr('id'));
+                });
+            }
+        }
+
+
         var sectionIds = idsLike("addedSection");
-        if(sectionIds.length <= 4){
+        if (sectionIds.length <= 4) {
             $("#added-courses").append(dscDiv);
             $("#" + dscId).append($(srcId).html() + removeButton);
             $(srcId).remove();
             $("#button_" + id).remove();
-        }else{
+        } else {
             alert("Only 5 courses can be added for schedule generation");
         }
 
+        retainChecked(subSections);
+
+    }
+
+    function retainChecked(ids) {
+        for(var k in ids){
+            $("#"+ids[k]).attr('checked', true);
+        }
     }
 
     function removeSection(id) {
@@ -63,14 +84,25 @@
     function generateSchedule() {
         var courseSelected = false;
         var ids = new Array();
-        var sectionIds = idsLike("addedSection")
+        var sectionIds = idsLike("addedSection");
+        var subSectionIds = idsLike("SUBSEC");
+        var sIds = new Array();
+
+
         for (var i in sectionIds) {
             if (!(sectionIds[i] === null || sectionIds[i] === undefined || sectionIds[i] === '')) {
                 courseSelected = true;
                 ids.push(sectionIds[i].split("_").pop());
+                for (var l in subSectionIds) {
+                    if (subSectionIds[l].slice(-2) == sectionIds[i].split("_").pop()) {
+                        $("#" + subSectionIds[l] + " input:radio:checked").each(function () {
+                            sIds.push($(this).attr('id').slice(-2));
+                        });
+                    }
+                }
             }
         }
-        var data = ("SectionIDs="+ids);
+        var data = ("SectionIDs=" + ids+"&SubSectionIDs="+ sIds);
         console.log(data);
 
         if (courseSelected) {
@@ -119,6 +151,7 @@
     <?php
     $this->renderPartial('_ajaxStatus', array(
         'sectionIDs' => $sectionIDs,
+        'subSectionIDs' => $subSectionIDs,
     ));
     ?>
 </div>

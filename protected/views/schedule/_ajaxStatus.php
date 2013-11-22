@@ -6,4 +6,6 @@
  * Time: 6:39 PM
  */
 if (!($sectionIDs == ''))
-    echo "Section IDs to register for " . $sectionIDs;
+    echo "Section IDs to register for " . $sectionIDs."<br/>";
+if (!($subSectionIDs == ''))
+    echo "Sub Section IDs to register for " . $subSectionIDs;
