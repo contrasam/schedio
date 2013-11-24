@@ -2,7 +2,7 @@
 /* @var $this EnrollmentController */
 
 $this->breadcrumbs=array(
-	'Enrollment',
+	'My Schedule',
 );
 ?>
 <h1><?php echo "My Schedule" ?></h1>
@@ -16,6 +16,7 @@ $this->breadcrumbs=array(
     }else{
          $course = "";
         foreach($enrollments as $enrollment){
+                echo "<div class='view'>";
                 if(!($course == Section::model()->findByPk($enrollment->associatedSubSection->associatedSectionID)->associatedCourse->courseCode)){
                     $course = Section::model()->findByPk($enrollment->associatedSubSection->associatedSectionID)->associatedCourse->courseCode;
                     echo "<h4>".$course."</h4>";
@@ -24,7 +25,8 @@ $this->breadcrumbs=array(
                     echo "Section : <b>".$enrollment->associatedSubSection->sectionCode."</b> Type: LEC<br/>";
                 }else if($enrollment->associatedSubSection->classType == 'TUTO'){
                     echo "Section : <b>".$enrollment->associatedSubSection->sectionCode."</b> Type: TUT <a href='/schedio/index.php/enrollment/update/".$enrollment->EnrollmentID."'>Change Section</a><br/>";
-
+                }else if($enrollment->associatedSubSection->classType == 'LAB'){
+                    echo "Section : <b>".$enrollment->associatedSubSection->sectionCode."</b> Type: LAB <a href='/schedio/index.php/enrollment/update/".$enrollment->EnrollmentID."'>Change Section</a><br/>";
                 }
                 foreach($enrollment->associatedSubSection->sectiontimes as $sectionTime){
                     echo $sectionTime->day." | from ".$sectionTime->fromTime." | to ".$sectionTime->toTime;
@@ -37,6 +39,7 @@ $this->breadcrumbs=array(
                 );
                 echo "<br/>";
                 echo "<br/>";
+                echo "</div>";
 
         }
     }

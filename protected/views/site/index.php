@@ -1,20 +1,24 @@
 <?php
 /* @var $this SiteController */
 
-$this->pageTitle=Yii::app()->name;
+$this->pageTitle = Yii::app()->name;
+
+$user = User::model()->findByPk(Yii::app()->user->id);
 ?>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+<h5>Welcome, <?php echo " " . $user->firstName ?></h5>
+<p>Schedio is a course management system which can be used by students and professors to plan their courses semester
+    wise.</p>
+<?php
 
-<p>Congratulations! You have successfully created your Yii application.</p>
+if($user->roleID == "STUDENT"){
+    echo "<h6><a href='/schedio/index.php/enrollment/index' >My Schedule</a></h6><br/>";
+    echo "<p>My schedule will list the courses you are enrolled in currently in and will also list the saved schedules that you had saved for future use.";
+    echo " the my schedule section you can switch sections and drop courses as per your preferences.";
+    echo "<h6><a href='/schedio/index.php/schedule/index' >Scheduler Planner</a></h6><br/>";
+    echo "<p>Schedule Planner will help in planning a schedule without any time overlaps and register for a particular sequence od courses, the schedule planner is personalised such that your previously registered or enrolled courses will be taken into account automatically during the schedule planning process, even the courses lister for you will be based on the previous courses finished and the prerequisite conditions.</p>";
+}
 
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>
+?>
 
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+

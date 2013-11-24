@@ -1,4 +1,24 @@
+<?php
+
+$this->breadcrumbs = array(
+    'Schedule Planner',
+);
+?>
 <script src="http://localhost/schedio/assets/59a60276/jquery.min.js"></script>
+<link rel="stylesheet" href="http://localhost/schedio/assets/9e19b393/css/hint.css">
+
+<style>
+    table {
+        table-layout: fixed
+    }
+
+    td {
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: default
+    }
+
+</style>
 <script type="text/javascript">
 
     function addSection(id) {
@@ -34,8 +54,8 @@
     }
 
     function retainChecked(ids) {
-        for(var k in ids){
-            $("#"+ids[k]).attr('checked', true);
+        for (var k in ids) {
+            $("#" + ids[k]).attr('checked', true);
         }
     }
 
@@ -102,7 +122,7 @@
                 }
             }
         }
-        var data = ("SectionIDs=" + ids+"&SubSectionIDs="+ sIds);
+        var data = ("SectionIDs=" + ids + "&SubSectionIDs=" + sIds);
         console.log(data);
 
         if (courseSelected) {
@@ -119,6 +139,24 @@
                 }
             });
         }
+    }
+
+    function registerSchedule(idsArray) {
+
+        var data = ("regSectionIDs=" + idsArray);
+
+        $.ajax({
+            type: 'POST',
+            url: '<?php echo Yii::app()->createAbsoluteUrl("schedule/registerSchedule"); ?>',
+            dataType: 'html',
+            data: data,
+            success: function (data) {
+                window.location.replace("http://localhost/schedio/index.php/enrollment/index");
+            },
+            error: function (data) {
+                $("#register-error").html(data);
+            }
+        });
     }
 
 </script>
@@ -145,19 +183,30 @@
 
 </div>
 <div id="generate-button">
-    <input type="button" onclick="generateSchedule();" value="Generate Schedule">
+    <input type="button" onclick="generateSchedule();" value="Check Schedule">
 </div>
+<br/>
 <div id="generate-status">
     <?php
     $this->renderPartial('_ajaxStatus', array(
         'sectionIDs' => $sectionIDs,
         'subSectionIDs' => $subSectionIDs,
+        'eligible' => $eligible,
+        'comparedRecords' => $comparedRecords,
     ));
     ?>
 </div>
 <div id="generate-error">
 
 </div>
+<div id="register-error">
+    <?php
+    $this->renderPartial('_ajaxRegister', array(
+        'status' => $status,
+    ));
+    ?>
+</div>
+
 
 
 

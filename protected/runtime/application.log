@@ -10660,3 +10660,418 @@ REQUEST_URI=/schedio/schedule
 in C:\xampp\htdocs\schedio\protected\views\schedule\index.php (155)
 in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (25)
 in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 00:57:48 [error] [php] Object of class Subsection could not be converted to string (C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php:340)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#2 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#3 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#4 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (340)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 01:01:28 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php:278)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#1 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#2 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#3 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (278)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 01:02:05 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php:278)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#1 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#2 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#3 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (278)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 01:03:52 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php:278)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#1 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#2 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#3 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (278)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 01:04:12 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php:278)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#1 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#2 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#3 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (278)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 01:04:43 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php:278)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#1 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#2 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#3 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (278)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 01:13:39 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php:307)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#1 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#2 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#3 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (307)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 01:30:21 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php:307)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#1 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#2 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#3 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (307)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 01:31:42 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php:307)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#1 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#2 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#3 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (307)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 05:17:29 [error] [exception.CException] exception 'CException' with message 'Property "Subsection.day" is not defined.' in C:\xampp\htdocs\schedio\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\db\ar\CActiveRecord.php(145): CComponent->__get('day')
+#1 C:\xampp\htdocs\schedio\protected\views\schedule\_ajaxStatus.php(38): CActiveRecord->__get('day')
+#2 C:\xampp\htdocs\schedio\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\schedio\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\schedio\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php(344): CController->renderPartial('_ajaxStatus', Array, false, true)
+#6 C:\xampp\htdocs\schedio\framework\web\actions\CInlineAction.php(49): ScheduleController->actionGenerateSchedule()
+#7 C:\xampp\htdocs\schedio\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\schedio\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\schedio\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): CController->run('generateSchedul...')
+#11 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController('schedule/genera...')
+#12 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\schedio\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+HTTP_REFERER=http://localhost/schedio/schedule
+---
+2013/11/23 08:02:56 [error] [php] Undefined variable: relatedSectionInfo (C:\xampp\htdocs\schedio\protected\views\schedule\_ajaxStatus.php:64)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(869): ScheduleController->renderFile()
+#1 C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php(344): ScheduleController->renderPartial()
+#2 C:\xampp\htdocs\schedio\framework\web\actions\CInlineAction.php(49): ScheduleController->actionGenerateSchedule()
+#3 C:\xampp\htdocs\schedio\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#5 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#6 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#7 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\views\schedule\_ajaxStatus.php (64)
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (344)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 08:04:35 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php:307)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#1 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#2 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#3 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (307)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 08:05:47 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php:307)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#1 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#2 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#3 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (307)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 08:08:16 [error] [php] Undefined variable: relSectionInfo (C:\xampp\htdocs\schedio\protected\views\schedule\_ajaxStatus.php:64)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(869): ScheduleController->renderFile()
+#1 C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php(344): ScheduleController->renderPartial()
+#2 C:\xampp\htdocs\schedio\framework\web\actions\CInlineAction.php(49): ScheduleController->actionGenerateSchedule()
+#3 C:\xampp\htdocs\schedio\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#5 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#6 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#7 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\views\schedule\_ajaxStatus.php (64)
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (344)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 08:14:03 [error] [php] Undefined variable: relSectionInfo (C:\xampp\htdocs\schedio\protected\views\schedule\_ajaxStatus.php:64)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(869): ScheduleController->renderFile()
+#1 C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php(344): ScheduleController->renderPartial()
+#2 C:\xampp\htdocs\schedio\framework\web\actions\CInlineAction.php(49): ScheduleController->actionGenerateSchedule()
+#3 C:\xampp\htdocs\schedio\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#5 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#6 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#7 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\views\schedule\_ajaxStatus.php (64)
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (344)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 08:14:27 [error] [php] Undefined variable: relSectionInfo (C:\xampp\htdocs\schedio\protected\views\schedule\_ajaxStatus.php:64)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(869): ScheduleController->renderFile()
+#1 C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php(344): ScheduleController->renderPartial()
+#2 C:\xampp\htdocs\schedio\framework\web\actions\CInlineAction.php(49): ScheduleController->actionGenerateSchedule()
+#3 C:\xampp\htdocs\schedio\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#5 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#6 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#7 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\views\schedule\_ajaxStatus.php (64)
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (344)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 08:15:06 [error] [php] Undefined variable: relSectionInfo (C:\xampp\htdocs\schedio\protected\views\schedule\_ajaxStatus.php:65)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(869): ScheduleController->renderFile()
+#1 C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php(344): ScheduleController->renderPartial()
+#2 C:\xampp\htdocs\schedio\framework\web\actions\CInlineAction.php(49): ScheduleController->actionGenerateSchedule()
+#3 C:\xampp\htdocs\schedio\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#5 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#6 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#7 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\views\schedule\_ajaxStatus.php (65)
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (344)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 08:21:33 [error] [php] Undefined variable: Info (C:\xampp\htdocs\schedio\protected\views\schedule\_ajaxStatus.php:64)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(869): ScheduleController->renderFile()
+#1 C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php(344): ScheduleController->renderPartial()
+#2 C:\xampp\htdocs\schedio\framework\web\actions\CInlineAction.php(49): ScheduleController->actionGenerateSchedule()
+#3 C:\xampp\htdocs\schedio\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#5 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#6 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#7 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\views\schedule\_ajaxStatus.php (64)
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (344)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 08:22:54 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php:307)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#1 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#2 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#3 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (307)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 08:25:27 [error] [php] Undefined variable: Info (C:\xampp\htdocs\schedio\protected\views\schedule\_ajaxStatus.php:64)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(869): ScheduleController->renderFile()
+#1 C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php(344): ScheduleController->renderPartial()
+#2 C:\xampp\htdocs\schedio\framework\web\actions\CInlineAction.php(49): ScheduleController->actionGenerateSchedule()
+#3 C:\xampp\htdocs\schedio\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#5 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#6 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#7 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\views\schedule\_ajaxStatus.php (64)
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (344)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 09:07:49 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php:307)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#1 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#2 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#3 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (307)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 09:10:57 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php:307)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#1 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#2 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#3 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (307)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 09:30:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "schdule".' in C:\xampp\htdocs\schedio\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController('schdule')
+#1 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\schedio\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/schedio/schdule
+---
+2013/11/23 17:53:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "generateSchedule".' in C:\xampp\htdocs\schedio\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(270): CController->missingAction('generateSchedul...')
+#1 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): CController->run('generateSchedul...')
+#2 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController('schedule/genera...')
+#3 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\schedio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+HTTP_REFERER=http://localhost/schedio/schedule
+---
+2013/11/23 19:15:12 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php:307)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(286): ScheduleController->runAction()
+#1 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#2 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#3 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (307)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 21:01:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registerSchedule".' in C:\xampp\htdocs\schedio\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(270): CController->missingAction('registerSchedul...')
+#1 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): CController->run('registerSchedul...')
+#2 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController('schedule/regist...')
+#3 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\schedio\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/schedio/index.php/schedule/registerSchedule
+HTTP_REFERER=http://localhost/schedio/index.php/schedule/index
+---
+2013/11/23 21:49:21 [error] [php] Undefined variable: status (C:\xampp\htdocs\schedio\protected\views\schedule\index.php:202)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(869): ScheduleController->renderFile()
+#1 C:\xampp\htdocs\schedio\framework\web\CController.php(782): ScheduleController->renderPartial()
+#2 C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php(52): ScheduleController->render()
+#3 C:\xampp\htdocs\schedio\framework\web\actions\CInlineAction.php(49): ScheduleController->actionIndex()
+#4 C:\xampp\htdocs\schedio\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\schedio\framework\web\filters\CFilterChain.php(133): ScheduleController->runAction()
+#6 C:\xampp\htdocs\schedio\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\schedio\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\schedio\framework\web\filters\CInlineFilter.php(58): ScheduleController->filterAccessControl()
+#9 C:\xampp\htdocs\schedio\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\schedio\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\schedio\framework\web\CController.php(265): ScheduleController->runActionWithFilters()
+#12 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): ScheduleController->run()
+#13 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php/schedule/index
+in C:\xampp\htdocs\schedio\protected\views\schedule\index.php (202)
+in C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php (52)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/23 21:50:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\schedio\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\schedio\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\schedio\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\schedio\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\schedio\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\schedio\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\schedio\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): CController->run('registerSchedul...')
+#8 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController('schedule/regist...')
+#9 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\schedio\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/schedio/index.php/schedule/registerSchedule
+HTTP_REFERER=http://localhost/schedio/index.php/schedule/index
+---
+2013/11/23 22:13:47 [error] [exception.CException] exception 'CException' with message 'Property "Enrollment.SubsectionID" is not defined.' in C:\xampp\htdocs\schedio\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\db\ar\CActiveRecord.php(145): CComponent->__get('SubsectionID')
+#1 C:\xampp\htdocs\schedio\protected\controllers\EnrollmentController.php(42): CActiveRecord->__get('SubsectionID')
+#2 [internal function]: EnrollmentController->actionDelete('1')
+#3 C:\xampp\htdocs\schedio\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(EnrollmentController), Array)
+#4 C:\xampp\htdocs\schedio\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(EnrollmentController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\schedio\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\schedio\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\schedio\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\schedio\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\schedio\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\schedio\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\schedio\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\schedio\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): CController->run('delete')
+#14 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController('enrollment/dele...')
+#15 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\schedio\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/schedio/index.php/enrollment/delete/1
+HTTP_REFERER=http://localhost/schedio/index.php/enrollment/index
+---
+2013/11/24 02:51:42 [error] [exception.CException] exception 'CException' with message 'Property "WebUser.email" is not defined.' in C:\xampp\htdocs\schedio\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\auth\CWebUser.php(146): CComponent->__get('email')
+#1 C:\xampp\htdocs\schedio\protected\views\schedule\_ajaxStatus.php(146): CWebUser->__get('email')
+#2 C:\xampp\htdocs\schedio\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\schedio\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\schedio\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\schedio\protected\controllers\ScheduleController.php(376): CController->renderPartial('_ajaxStatus', Array, false, true)
+#6 C:\xampp\htdocs\schedio\framework\web\actions\CInlineAction.php(49): ScheduleController->actionGenerateSchedule()
+#7 C:\xampp\htdocs\schedio\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\schedio\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\schedio\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#10 C:\xampp\htdocs\schedio\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\schedio\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\schedio\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\schedio\framework\web\CController.php(291): CFilterChain->run()
+#14 C:\xampp\htdocs\schedio\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): CController->run('generateSchedul...')
+#16 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController('schedule/genera...')
+#17 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\schedio\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/schedio/index.php/schedule/generateSchedule
+HTTP_REFERER=http://localhost/schedio/index.php/schedule/index
+---

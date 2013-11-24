@@ -8,18 +8,48 @@
 
 class ScheduleController extends Controller
 {
+    public function filters()
+    {
+        return array(
+            'accessControl',
+        );
+    }
+
+    public function accessRules()
+    {
+        return array(
+            array('allow',
+                'actions' => array('index', 'generateSchedule', 'updateAjax', 'registerSchedule'),
+                'users' => array('@'),
+                'roles' => array('STUDENT')
+            ),
+            array('deny', // deny all users
+                'users' => array('*'),
+            ),
+        );
+    }
 
     function actionIndex()
     {
 
         $model = new PreferenceForm();
-        $data = Subsection::model()->findAll();
+
+        $response = Yii::app()->db->createCommand('CALL `getStudentEligibleCourse`(\'' . Yii::app()->user->id . '\', \'2013\')');
+
+        foreach ($response->queryAll() as $row) {
+            $sections[] = Subsection::model()->findByAttributes(array(
+                'SubsectionID' => $row['SubsectionID'],
+            ));
+        }
 
         $this->render('index', array(
             'model' => $model,
-            'courses' => $data,
+            'courses' => $sections,
             'sectionIDs' => '',
             'subSectionIDs' => '',
+            'eligible' => '',
+            'comparedRecords' => '',
+            'status' => '',
         ));
     }
 
@@ -34,7 +64,7 @@ class ScheduleController extends Controller
 
         $model->attributes = Yii::app()->request->getPost('PreferenceForm');
 
-        $response = Yii::app()->db->createCommand('CALL `getStudentEligibleCourse`(\'6934153\', \'2013\')');
+        $response = Yii::app()->db->createCommand('CALL `getStudentEligibleCourse`(\'' . Yii::app()->user->id . '\', \'2013\')');
 
         foreach ($response->queryAll() as $row) {
             $sections[] = Subsection::model()->findByAttributes(array(
@@ -256,7 +286,7 @@ class ScheduleController extends Controller
 
         $subSections = array_filter($subSections);
         $enrollments = Enrollment::model()->findAllByAttributes(array(
-            'associatedStudentID' => '6934153',
+            'associatedStudentID' => Yii::app()->user->id,
         ));
 
         foreach ($subSections as $subSection) {
@@ -275,7 +305,7 @@ class ScheduleController extends Controller
 
             foreach ($subSectionTimes as $subSectionTime) {
                 foreach ($enrollmentTimes as $enrollmentTime) {
-                    if ($enrollmentTime->associatedSubSection != $subSectionTime->associatedSubSection) {
+                    if ($enrollmentTime->associatedSubSection0->associatedSectionID != $subSectionTime->associatedSubSection0->associatedSectionID) {
                         $overlapFrom = max($enrollmentTime->fromTime, $subSectionTime->fromTime);
                         $overlapTo = min($enrollmentTime->toTime, $subSectionTime->toTime);
                         $overlapSum = strtotime($overlapTo) - strtotime($overlapFrom);
@@ -299,12 +329,17 @@ class ScheduleController extends Controller
             }
         }
 
+
         foreach ($subSectionTimes as $subSectionTime) {
             foreach ($subSectionTimes as $enrollmentTime) {
-                if ($enrollmentTime->associatedSubSection != $subSectionTime->associatedSubSection) {
-                    $overlapFrom = max($enrollmentTime->fromTime, $subSectionTime->fromTime);
-                    $overlapTo = min($enrollmentTime->toTime, $subSectionTime->toTime);
-                    $overlapSum = strtotime($overlapTo) - strtotime($overlapFrom);
+                if (($enrollmentTime->associatedSubSection0->associatedSectionID != $subSectionTime->associatedSubSection0->associatedSectionID)) {
+                    if (($enrollmentTime->day == $subSectionTime->day) && ($enrollmentTime->associatedSubSection0->associatedSection->semester == $subSectionTime->associatedSubSection0->associatedSection->semester)) {
+                        $overlapFrom = max($enrollmentTime->fromTime, $subSectionTime->fromTime);
+                        $overlapTo = min($enrollmentTime->toTime, $subSectionTime->toTime);
+                        $overlapSum = strtotime($overlapTo) - strtotime($overlapFrom);
+                    } else {
+                        $overlapSum = 0;
+                    }
                     if ($overlapSum > 15) {
                         $tempRecords[] = array(
                             'subSectionID' => $subSectionTime->associatedSubSection,
@@ -318,11 +353,10 @@ class ScheduleController extends Controller
                             'overlapStatus' => false,
                         );
                     }
-                } else {
-                    //Already registered for course message
                 }
             }
         }
+
 
         $tempRecords = array_filter($tempRecords);
         $tempRecords = array_unique($tempRecords, SORT_REGULAR);
@@ -334,13 +368,43 @@ class ScheduleController extends Controller
                 $success[] = Subsection::model()->findByPk($tempRecord['subSectionID'])->SubsectionID;
             }
         }
-
-       var_dump(array_unique(array_diff($success, $error)));
-
-
         $this->renderPartial('_ajaxStatus', array(
             'sectionIDs' => $sectionIDs,
             'subSectionIDs' => $subSectionIDs,
+            'eligible' => array_unique(array_diff($success, $error)),
+            'comparedRecords' => $tempRecords,
         ), false, true);
     }
-} 
+
+    public function actionRegisterSchedule()
+    {
+        $regSectionIDs = Yii::app()->request->getPost('regSectionIDs');
+
+        $regSectionIDsArray = explode(",", $regSectionIDs);
+
+        foreach ($regSectionIDsArray as $regSectionID) {
+            $status = array();
+            $subSection = Subsection::model()->findByPk($regSectionID);
+            $enrollment = new Enrollment();
+            $enrollment->associatedStudentID = Yii::app()->user->id;
+            $enrollment->associatedSubSectionID = $regSectionID;
+            $enrollment->associatedCourseID = Subsection::model()->findByPk($regSectionID)->associatedSection->associatedCourseID;
+            $enrollment->status = "REGISTERED";
+            if ($subSection->currentSectionSize < $subSection->sectionSize) {
+                if ($enrollment->save()) {
+                    $subSection->setAttribute('currentSectionSize', ($subSection->currentSectionSize + 1));
+                    if ($subSection->save()) {
+                        $status[] = "Registration: Successful";
+                    } else {
+                        $status[] = "Section Update: Failed";
+                    }
+                } else {
+                    $status[] = "Registration: Failed";
+                }
+            }
+        }
+        $this->renderPartial('_ajaxRegister', array(
+            'status' => array_unique(array_filter($status)),
+        ), false, true);
+    }
+}

@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4354030-8d2c-42eb-9cac-ffcdc6fab0ee" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\xampp\htdocs\schedio\protected\controllers\OverlapCalculator.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/schedule/_ajaxRegister.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/9e19b393/css/hint.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/EnrollmentController.php" afterPath="$PROJECT_DIR$/protected/controllers/EnrollmentController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/ScheduleController.php" afterPath="$PROJECT_DIR$/protected/controllers/ScheduleController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/schedule/_ajaxCourses.php" afterPath="$PROJECT_DIR$/protected/views/schedule/_ajaxCourses.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/schedule/_ajaxStatus.php" afterPath="$PROJECT_DIR$/protected/views/schedule/_ajaxStatus.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/sectiontime/_form.php" afterPath="$PROJECT_DIR$/protected/views/sectiontime/_form.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/enrollment/index.php" afterPath="$PROJECT_DIR$/protected/views/enrollment/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/schedule/index.php" afterPath="$PROJECT_DIR$/protected/views/schedule/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/index.php" afterPath="$PROJECT_DIR$/protected/views/site/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="schedio.yii.iws" />
@@ -31,7 +34,35 @@
     <favorites_list name="schedio.yii" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="430" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.5604396" vertical-offset="0" max-vertical-offset="546">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/models/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="47" selection-start="1157" selection-end="1163" vertical-scroll-proportion="-5.8846154" vertical-offset="612" max-vertical-offset="2533">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScheduleController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/ScheduleController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="388" column="47" selection-start="18672" selection-end="18692" vertical-scroll-proportion="-6.3076925" vertical-offset="6347" max-vertical-offset="6970">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -50,11 +81,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/views/enrollment/_form.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/EnrollmentController.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/QuoteController.php" />
-        <option value="$PROJECT_DIR$/protected/views/sectiontime/admin.php" />
-        <option value="$PROJECT_DIR$/protected/views/schedule/_list.php" />
         <option value="$PROJECT_DIR$/protected/config/main.php" />
         <option value="$PROJECT_DIR$/protected/views/course/index.php" />
         <option value="$PROJECT_DIR$/protected/models/PreferenceForm.php" />
@@ -63,9 +89,14 @@
         <option value="$PROJECT_DIR$/protected/views/schedule/_ajaxCourses.php" />
         <option value="$PROJECT_DIR$/protected/controllers/TempEnrollment.php" />
         <option value="$PROJECT_DIR$/protected/controllers/TempRecord.php" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/views/schedule/_ajaxRegister.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ScheduleController.php" />
-        <option value="$PROJECT_DIR$/protected/views/schedule/_ajaxStatus.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/EnrollmentController.php" />
+        <option value="$PROJECT_DIR$/protected/views/enrollment/index.php" />
         <option value="$PROJECT_DIR$/protected/views/schedule/index.php" />
+        <option value="$PROJECT_DIR$/protected/views/schedule/_ajaxStatus.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
       </list>
     </option>
   </component>
@@ -106,7 +137,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -175,7 +205,73 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schedio.yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schedio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="section" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schedio.yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schedio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="schedule" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schedio.yii" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="schedio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -217,6 +313,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,11 +354,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\schedio\assets\9e19b393\css" />
       <recent name="C:\xampp\htdocs\schedio\protected\commands" />
       <recent name="C:\xampp\htdocs\schedio\protected\controllers" />
       <recent name="C:\xampp\htdocs\schedio\protected\extensions" />
       <recent name="C:\xampp\htdocs\schedio\protected\data" />
-      <recent name="C:\xampp\htdocs\schedio\protected\views\enrollment" />
     </key>
   </component>
   <component name="RunManager">
@@ -356,7 +453,11 @@
       <created>1385051345761</created>
       <updated>1385051345761</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added Schedule Generator prototype">
+      <created>1385103546960</created>
+      <updated>1385103546960</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -385,20 +486,20 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23718888" sideWeight="0.6710311" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21815519" sideWeight="0.6710311" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -427,115 +528,117 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/commands/Yii-Docs-Generator/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.3374126" vertical-offset="193" max-vertical-offset="765" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/sectiontime/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="133" selection-start="1653" selection-end="1653" vertical-scroll-proportion="1.2765567" vertical-offset="0" max-vertical-offset="1071">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/sectiontime/create.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/site/error.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="559">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/schedule/_preference.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/Section.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="136" selection-start="5064" selection-end="5064" vertical-scroll-proportion="2.0238094" vertical-offset="0" max-vertical-offset="1394">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/EnrollmentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/CourseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="26" selection-start="1623" selection-end="1641" vertical-scroll-proportion="-5.230769" vertical-offset="969" max-vertical-offset="3060">
+        <state line="77" column="31" selection-start="2474" selection-end="2492" vertical-scroll-proportion="-9.153846" vertical-offset="1071" max-vertical-offset="2278">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Enrollment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="35" selection-start="2471" selection-end="2493" vertical-scroll-proportion="-9.807693" vertical-offset="1020" max-vertical-offset="2227">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/TempRecord.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="127" selection-end="137" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Sectiontime.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="34" selection-start="1763" selection-end="1784" vertical-scroll-proportion="0.39534885" vertical-offset="765" max-vertical-offset="2142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Section.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="29" selection-start="1990" selection-end="2006" vertical-scroll-proportion="-7.8461537" vertical-offset="867" max-vertical-offset="2278">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Course.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="23" selection-start="2224" selection-end="2234" vertical-scroll-proportion="-13.076923" vertical-offset="918" max-vertical-offset="2227">
+        <state line="80" column="10" selection-start="2657" selection-end="2657" vertical-scroll-proportion="-0.5509839" vertical-offset="1668" max-vertical-offset="2227">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Subsection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="25" selection-start="2510" selection-end="2522" vertical-scroll-proportion="-6.6153846" vertical-offset="1103" max-vertical-offset="2363">
+        <state line="81" column="24" selection-start="2735" selection-end="2746" vertical-scroll-proportion="0.5805861" vertical-offset="1060" max-vertical-offset="2363">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/schedule/_ajaxCourses.php">
+    <entry file="file://$PROJECT_DIR$/protected/controllers/EnrollmentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="239" selection-start="1726" selection-end="1726" vertical-scroll-proportion="0.93406594" vertical-offset="0" max-vertical-offset="1326">
+        <state line="48" column="36" selection-start="1737" selection-end="1737" vertical-scroll-proportion="0.5604396" vertical-offset="510" max-vertical-offset="1768">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/schedule/_ajaxStatus.php">
+    <entry file="file://$PROJECT_DIR$/protected/views/enrollment/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="61" selection-start="275" selection-end="275" vertical-scroll-proportion="0.15205725" vertical-offset="0" max-vertical-offset="559">
+        <state line="41" column="30" selection-start="2131" selection-end="2131" vertical-scroll-proportion="0.9029304" vertical-offset="204" max-vertical-offset="901">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/schedule/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="49" selection-start="845" selection-end="845" vertical-scroll-proportion="0.6386404" vertical-offset="0" max-vertical-offset="2890">
+        <state line="17" column="23" selection-start="372" selection-end="372" vertical-scroll-proportion="-5.1431127" vertical-offset="3164" max-vertical-offset="3723">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/schedule/_ajaxCourses.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.4285715" vertical-offset="780" max-vertical-offset="1326">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/column1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="559">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/column2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="42" selection-start="3112" selection-end="3134" vertical-scroll-proportion="1.7334526" vertical-offset="0" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/schedule/_ajaxRegister.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="22" selection-start="142" selection-end="142" vertical-scroll-proportion="0.27370304" vertical-offset="0" max-vertical-offset="559">
+          <folding>
+            <element signature="e#6#95#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/schedule/_ajaxStatus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="33" selection-start="9886" selection-end="9886" vertical-scroll-proportion="4.5146523" vertical-offset="0" max-vertical-offset="2958">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/ScheduleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="34" selection-start="433" selection-end="433" vertical-scroll-proportion="0.65384614" vertical-offset="0" max-vertical-offset="5967">
-          <folding>
-            <element signature="e#6#95#0" expanded="true" />
-          </folding>
+        <state line="388" column="47" selection-start="18672" selection-end="18692" vertical-scroll-proportion="-6.3076925" vertical-offset="6347" max-vertical-offset="6970">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="47" selection-start="1157" selection-end="1163" vertical-scroll-proportion="-5.8846154" vertical-offset="612" max-vertical-offset="2533">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="430" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.5604396" vertical-offset="0" max-vertical-offset="546">
+          <folding />
         </state>
       </provider>
     </entry>
