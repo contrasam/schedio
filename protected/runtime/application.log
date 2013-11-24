@@ -11075,3 +11075,37 @@ Stack trace:
 REQUEST_URI=/schedio/index.php/schedule/generateSchedule
 HTTP_REFERER=http://localhost/schedio/index.php/schedule/index
 ---
+2013/11/24 17:22:46 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\schedio\protected\views\site\index.php:9)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\schedio\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\schedio\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\xampp\htdocs\schedio\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\schedio\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\schedio\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\schedio\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php
+in C:\xampp\htdocs\schedio\protected\views\site\index.php (9)
+in C:\xampp\htdocs\schedio\protected\controllers\SiteController.php (32)
+in C:\xampp\htdocs\schedio\index.php (13)
+2013/11/24 17:24:04 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\schedio\protected\views\site\index.php:14)
+Stack trace:
+#0 C:\xampp\htdocs\schedio\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\schedio\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\schedio\protected\controllers\SiteController.php(32): SiteController->render()
+#3 C:\xampp\htdocs\schedio\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\schedio\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\schedio\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\schedio\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\schedio\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\schedio\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\schedio\index.php(13): CWebApplication->run()
+REQUEST_URI=/schedio/index.php
+in C:\xampp\htdocs\schedio\protected\views\site\index.php (14)
+in C:\xampp\htdocs\schedio\protected\controllers\SiteController.php (32)
+in C:\xampp\htdocs\schedio\index.php (13)
