@@ -34,7 +34,7 @@ class ScheduleController extends Controller
 
         $model = new PreferenceForm();
 
-        $response = Yii::app()->db->createCommand('CALL `getStudentEligibleCourse`(\'' . Yii::app()->user->id . '\', \'2013\')');
+        $response = Yii::app()->db->createCommand('CALL `simpleEligibleCourses`(\'' . Yii::app()->user->id . '\', \'2013\')');
 
         foreach ($response->queryAll() as $row) {
             $sections[] = Subsection::model()->findByAttributes(array(
@@ -64,7 +64,7 @@ class ScheduleController extends Controller
 
         $model->attributes = Yii::app()->request->getPost('PreferenceForm');
 
-        $response = Yii::app()->db->createCommand('CALL `getStudentEligibleCourse`(\'' . Yii::app()->user->id . '\', \'2013\')');
+        $response = Yii::app()->db->createCommand('CALL `simpleEligibleCourses`(\'' . Yii::app()->user->id . '\', \'2013\')');
 
         foreach ($response->queryAll() as $row) {
             $sections[] = Subsection::model()->findByAttributes(array(
